@@ -99,7 +99,8 @@ class AddressPicker extends React.Component {
           value={this.state.address}
           onChange={this.onAddressChange}
           onSelect={this.onAddressSelect}
-          searchOptions={autocompleteOptions}>
+          searchOptions={autocompleteOptions}
+          highlightFirstSuggestion={true}>
           {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
             <div className="form-group input-location-wrapper">
               <input
